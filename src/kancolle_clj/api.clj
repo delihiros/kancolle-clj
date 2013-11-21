@@ -19,3 +19,7 @@
 (def slotitem (create-api-call "/api_get_member/slotitem"))
 (def deck (create-api-call "/api_get_member/deck"))
 (def deck-port (create-api-call "/api_get_member/deck_port"))
+(def open-new-dock (create-api-call "/api_req_nyukyo/open_new_dock"))
+(def open-new-kousyou (create-api-call "/api_req_kousyou/open_new_dock"))
+(def mission-start (create-api-call "/api_req_mission/start")) ;; :api_deck_id, :api_mission_id
+(def mission-result (create-api-call "/api_req_mission/result"))
