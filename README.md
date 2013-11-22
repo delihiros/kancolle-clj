@@ -4,6 +4,10 @@ KanColle API wrapper written in Clojure.
 
 ## Usage
 
+if you are using leiningen,
+
+	[kancolle-clj "0.2.0-SNAPSHOT"]
+
 read ``src/kancolle_clj/sample.clj`` and you would know how it is like : )
 
 ## License
