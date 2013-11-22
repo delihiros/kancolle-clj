@@ -1,10 +1,10 @@
 # kancolle-clj
 
-Clojureで書かれた艦これAPIのラッパーライブラリです。
+KanColle API wrapper written in Clojure.
 
 ## Usage
 
-いつかテスト書きます。
+read ``src/kancolle_clj/sample.clj`` and you would know how it is like : )
 
 ## License
 
