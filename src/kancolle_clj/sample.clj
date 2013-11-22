@@ -47,8 +47,9 @@
                     (:api_data (ship))))) (first empty-docks)))))
 
 (comment
-  (for [fleet-id [2 3 4]]
+  (for [fleet-id [2 3]]
     (leveling-fleet fleet-id))
   (get-devtool-by 3)
   (get-bauxite-by 4)
+  (recover-most-damaged-ship)
   )
