@@ -1,9 +1,8 @@
 (ns kancolle-clj.core
   (:use [kancolle-clj.setting])
   (:require [clj-http.client :as client]
-            [net.cgrand.enlive-html :as enlive]
-            [clojure.pprint :only [pprint]]
             [clojure.data.json :as json]))
+
 
 (defn create-api-call [path]
   (fn [& options]
