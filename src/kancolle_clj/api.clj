@@ -13,6 +13,10 @@
   "can get information about map such as its name and description"
   (create-api-call "/api_get_master/mapinfo"))
 
+(def mapcell
+  "can get information about map you selected"
+  (create-api-call "/api_get_master/mapcell"))
+
 (def ndock
  "can get information about recovery dock" 
   (create-api-call "/api_get_member/ndock"))
@@ -27,6 +31,13 @@
     (ship2 :api_sort_order 2 :api_sort_key 1)
   "
   (create-api-call "/api_get_member/ship2"))
+
+(def ship3
+  "can get information about ships. difference between ship2?
+  examples:
+    (ship3 :api_sort_order 2 :api_sort_key 1)
+  "
+  (create-api-call "/api_get_member/ship3"))
 
 (def material
   "can get information about materials"
@@ -80,7 +91,7 @@
 (def battle
   "battle with given formation. 
   examples:
-  (battle :api_formation 1)
+  (battle :battle :api_formation 1)
   "
   (create-api-call "/api_req_sortie/battle"))
 
