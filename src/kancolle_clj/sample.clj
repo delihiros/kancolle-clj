@@ -59,27 +59,9 @@
     (leveling-fleet fleet-id))
   (for [fleet-id [1 3 4]]
     (get-bauxite-by fleet-id))
+  (get-bauxite-by 1)
   (for [fleet-id [1 3 4]]
     (get-fuel-by fleet-id))
   (recover-most-damaged-ship)
   (leveling-fleet 4)
-  
-  (let [fleet-number 1
-        fleet (nth (get-fleets-ids) (- fleet-number 1))]
-    (charge-fleet fleet)
-    (mapcell :port :api_mapinfo_no 2 :api_maparea_id 1)
-    (battle-start :port :api_formation_id 1 :api_deck_id fleet-number :api_mapinfo_no 2 :api_maparea_id 3)
-    (battle :battle :api_formation 1)
-    (let [result (battle-result :battle)]
-      (ship2 :battle :api_sort_order 2 :api_sort_key 1)
-      (slotitem :battle)
-      (deck :battle)
-      (logincheck :port)
-      (material :port)
-      (deck-port :port)
-      (ndock :port)
-      (ship3 :port :api_sort_order 2 :api_sort_key 1)
-      (basic :port)
-      (charge-fleet fleet)
-      result))
   )

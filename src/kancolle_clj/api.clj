@@ -35,7 +35,7 @@
 (def ship3
   "can get information about ships. difference between ship2?
   examples:
-    (ship3 :api_sort_order 2 :api_sort_key 1)
+    (ship3 :port :api_sort_order 2 :api_sort_key 1)
   "
   (create-api-call "/api_get_member/ship3"))
 
